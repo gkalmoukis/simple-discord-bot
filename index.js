@@ -1,3 +1,4 @@
+require('dotenv').config();
 const fs = require('fs')
 
 // Extract the required classes from the discord.js module
@@ -13,5 +14,4 @@ fs.readdir('./events/', (err, files) => {
         client.on(eventName, (...args) => eventHandler(client, ...args))
     })
 })
-
-client.login('NTQ1ODk4MzU3NzA5NjAyODE3.D0gXIQ.BcqynZ9OOzUFD-ZjTUoCGuwKVhM')
+client.login(process.env.BOT_TOKEN);
