@@ -1,0 +1,29 @@
+{
+  "name": "simple-discord-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giokalm/simple-discord-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giokalm/simple-discord-bot/issues"
+  },
+  "homepage": "https://github.com/giokalm/simple-discord-bot#readme",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "unirest": "^0.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
