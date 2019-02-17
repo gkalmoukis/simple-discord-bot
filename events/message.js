@@ -5,6 +5,7 @@ const types = require('../commands/types');
 const factions = require('../commands/factions');
 const qualities = require('../commands/qualities');
 const races = require('../commands/races');
+const search = require('../commands/search');
 
 module.exports = (client, message) => {
     if (message.content.startsWith('!card')) {
@@ -27,5 +28,8 @@ module.exports = (client, message) => {
     }
     if (message.content.startsWith('!races')) {
         return races(message);
+    }
+    if (message.content.startsWith('!search')) {
+        return search(message);
     }
   }
