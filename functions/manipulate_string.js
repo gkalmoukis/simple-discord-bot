@@ -33,5 +33,10 @@ module.exports = {
             name += split_string[index]+" ";
         }
         return name;
+    },
+    requested_expression: function(command){
+        const split_string = command.content.split(" ");
+        var expression = split_string[1];
+        return expression;
     }
 };

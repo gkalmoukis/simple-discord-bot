@@ -6,6 +6,7 @@ const factions = require('../commands/factions');
 const qualities = require('../commands/qualities');
 const races = require('../commands/races');
 const search = require('../commands/search');
+const math = require('../commands/math');
 
 module.exports = (client, message) => {
     if (message.content.startsWith('!card')) {
@@ -31,5 +32,8 @@ module.exports = (client, message) => {
     }
     if (message.content.startsWith('!search')) {
         return search(message);
+    }
+    if (message.content.startsWith('!math')) {
+        return math(message);
     }
   }
